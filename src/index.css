@@ -12,6 +12,10 @@
     font-family: "Poppins", sans-serif;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .loader-text h1{
 font-family: "Pacifico", cursive;
 }
