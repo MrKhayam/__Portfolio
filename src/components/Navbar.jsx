@@ -5,7 +5,7 @@ import { FaGripLines } from "react-icons/fa";
 const Navbar = () => {
   return (
     <>
-      <div className="w-full h-full absolute top-0 bg-black z-40">
+      <div className="w-full h-full md:hidden absolute top-0 bg-black z-40">
 
       <ul className="liParent mt-20 w-full py-20 h-[80%] p-5 flex flex-col gap-6">
         <li className="text-white text-2xl border-b py-2 border-white">Home</li>
