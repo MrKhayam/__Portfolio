@@ -1,24 +1,34 @@
 import React from "react";
 import { RiMoonClearLine } from "react-icons/ri";
 import { FaGripLines } from "react-icons/fa";
+import { IoIosCloseCircle } from "react-icons/io";
+
+
 
 const Navbar = () => {
   return (
     <>
       <div className="w-full h-full md:hidden absolute top-0 bg-black z-40">
+        <IoIosCloseCircle className="text-white absolute top-[5%] right-[5%]" size={30}/>
 
-      <ul className="liParent mt-20 w-full py-20 h-[80%] p-5 flex flex-col gap-6">
-        <li className="text-white text-2xl border-b py-2 border-white">Home</li>
-        <li className="text-white text-2xl border-b py-2 border-white">About</li>
-        <li className="text-white text-2xl border-b py-2 border-white">Skills</li>
-        <li className="text-white text-2xl border-b py-2 border-white">Projects</li>
-        <li className="text-white text-2xl border-b py-2 border-white">Contact</li>
-      </ul>
-
+        <ul className="liParent mt-10 w-full py-20 h-[80%] p-5 flex flex-col gap-6">
+          <li className="text-white text-2xl border-b py-2 border-white">
+            Home
+          </li>
+          <li className="text-white text-2xl border-b py-2 border-white">
+            About
+          </li>
+          <li className="text-white text-2xl border-b py-2 border-white">
+            Skills
+          </li>
+          <li className="text-white text-2xl border-b py-2 border-white">
+            Projects
+          </li>
+          <li className="text-white text-2xl border-b py-2 border-white">
+            Contact
+          </li>
+        </ul>
       </div>
-
-
-
 
       <div className="md:w-[85%] w-[95%] bg-[#ffffff59] md:z-30 z-30 fixed left-[2.5%] md:left-[7%] backdrop:blur-lg shadow-md rounded-md mx-auto h-auto py-4 md:py-5 px-8 flex items-center justify-between">
         <div className="logo">

@@ -6,7 +6,7 @@ const Loader = () => {
   useGSAP(() => {
     const tl = gsap.timeline();
 
-    tl.from("h1 H1", {
+    tl.from(".myName h1", {
       y: 40,
       duration: 0.8,
       delay: 0.4,
@@ -25,8 +25,8 @@ const Loader = () => {
   return (
     <>
       <div className="w-full z-50 md:z-50 loader bg-black h-full fixed top-0 flex justify-center items-center">
-        <h1
-          className="text-white loader-text flex text-4xl md:text-6xl py-4 overflow-hidden font-bold
+        <div
+          className="text-white myName loader-text flex text-4xl md:text-6xl py-4 overflow-hidden font-bold
 "
         >
           <h1>K</h1>
@@ -35,7 +35,7 @@ const Loader = () => {
           <h1>Y</h1>
           <h1>A</h1>
           <h1>M.</h1>
-        </h1>
+        </div>
       </div>
     </>
   );
