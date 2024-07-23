@@ -1,15 +1,28 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 import { RiMoonClearLine } from "react-icons/ri";
 import { FaGripLines } from "react-icons/fa";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import Full from "./Full";
 import { RiSunLine } from "react-icons/ri";
 
 
 
 
+
+
+
+
+
+
 const Navbar = ({navbarFunction, isToggled, setIsToggled}) => {
+  
+
+
+
+
+
+
+
 
 const handleMoon = () => {
   setIsToggled((prev) => !prev);
@@ -29,7 +42,7 @@ const handleMoon = () => {
           </h1>
         </div>
         <div className="right md:flex md:items-center md:gap-10">
-          <ul className="md:flex md:items-center sm:hidden hidden gap-8">
+          <ul className="md:flex md:navLiParent md:items-center sm:hidden hidden gap-8">
             <li className="text-lg cursor-pointer hover:text-black dark:hover:text-white text-gray-400 transition-all duration-500">
               Home
             </li>
