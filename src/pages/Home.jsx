@@ -60,40 +60,40 @@ const Home = () => {
 
   return (
     <>
-      <div className="home w-full h-screen relative md:pt-12 pt-8 overflow-x-hidden dark:bg-black bg-[#dadada]">
+      <div className="home w-full h-screen relative md:pt-10 transition-all duration-500 pt-5 overflow-x-hidden dark:bg-black bg-[#dadada]">
         <Loader />
-        <Navbar navbarFunction={handleNavClick} />
+        <Navbar navbarFunction={handleNavClick} isToggled={isToggled} setIsToggled={setIsToggled} />
 
-        <div className="w-full full h-full right-[-100%] md:hidden absolute dark:bg-white top-0 bg-black z-40">
+        <div className="w-[100vw] md:w-[100vw] full h-full right-[-100%] md:hidden absolute dark:bg-black top-0 bg-white z-40">
           <IoIosCloseCircle
             onClick={handleCross}
-            className="text-white dark:text-black myCross absolute top-[5%] right-[5%]"
+            className="text-black dark:text-white myCross absolute top-[5%] right-[5%]"
             size={30}
           />
 
           <ul className="liParent mt-10 w-full py-20 h-[80%] p-5 flex flex-col gap-6">
-            <li className="text-white dark:text-black text-2xl border-b py-2 border-white dark:border-black">
+            <li className="text-black dark:text-white text-2xl border-b py-2 border-black dark:border-white">
               Home
             </li>
-            <li className="text-white dark:text-black text-2xl border-b py-2 border-white dark:border-black">
+            <li className="text-black dark:text-white text-2xl border-b py-2 border-black dark:border-white">
               About
             </li>
-            <li className="text-white dark:text-black text-2xl border-b py-2 border-white dark:border-black">
+            <li className="text-black dark:text-white text-2xl border-b py-2 border-black dark:border-white">
               Skills
             </li>
-            <li className="text-white dark:text-black text-2xl border-b py-2 border-white dark:border-black">
+            <li className="text-black dark:text-white text-2xl border-b py-2 border-black dark:border-white">
               Projects
             </li>
-            <li className="text-white dark:text-black text-2xl border-b py-2 border-white dark:border-black">
+            <li className="text-black dark:text-white text-2xl border-b py-2 border-black dark:border-white">
               Contact
             </li>
-            <li className="text-white items-center dark:text-black flex justify-between text-2xl border-b py-2 border-white">
+            <li className="text-black items-center dark:text-white flex justify-between text-2xl border-b py-2 border-black dark:border-white">
               <h1>Dark Mode</h1>
               <div className="toggle-btn">
                 <ToggleButton
                   value={isToggled}
                   onToggle={() => {
-                    setIsToggled((prev) => !prev)
+                    setIsToggled((prev) => !prev);
                   }}
                 />
               </div>
